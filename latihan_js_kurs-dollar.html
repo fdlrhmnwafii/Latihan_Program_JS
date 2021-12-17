@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kurs Dollar</title>
+    <script>
+        function hitung(){
+            const rupiah = 14650; //konstanta
+            let dollar = document.getElementById("bil1").value;
+            console.log("Dollar = " + dollar +" $");
+            let nilaikurs = rupiah * dollar;
+            console.log("RP. "+nilaikurs);
+            let area_hasil = document.getElementById("hasil");
+            area_hasil.innerHTML = "Rp. "+ nilaikurs;
+        }
+    </script>
+</head>
+<body>
+    <h3>Nilai Kurs Rupiah</h3>
+    Masukan Nilai Dollar
+    <input type="number" value="" size="10" id="bil1">
+    <br>
+    <button onclick="hitung()">Hitung</button>
+    <br>
+    Hasil = <span id="hasil"></span>
+</body>
+</html>
